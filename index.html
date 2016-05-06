@@ -1,0 +1,334 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        position: relative;
+        margin-top: 120px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.95);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 73px;
+        z-index: 1000;
+      }
+
+      header .skala, .sofa, .grid > .container, hr {
+        width: 1176px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      header .skala > label {
+        float: left;
+        width: 84px;
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #8c8c8c;
+        border-right: 1px solid lightskyblue;
+      }
+
+      header .skala > label:first-child {
+        border-left: 1px solid lightskyblue;
+      }
+
+      h1, h2 {
+        font-weight: 200;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin: 15px 0;
+      }
+
+      h2 {
+        font-size: 50px;
+        margin-top: 50px;
+      }
+
+      .sofa {
+        height: 158px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        position: relative;
+      }
+
+      .sofa > div[class^="span"] {
+        height: 96px;
+        float: left;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-left: 0;
+        border-image: url("img/multiplex.jpg") 15% round;
+        position: relative;
+        top: 62px;
+      }
+
+      .sofa > div:first-child, .sofa > div:last-child {
+        border-left: 5px solid transparent;
+        height: 100%;
+        top: 0;
+      }
+
+      .sofa > div[class^="span"].before-last {
+        border-right: 0;
+      }
+
+      .span1 {
+        width: 84px;
+      }
+
+      .span2 {
+        width: 168px;
+      }
+
+      .span3 {
+        width: 252px;
+      }
+
+      .span4 {
+        width: 336px;
+      }
+
+      .span5 {
+        width: 420px;
+      }
+
+      .span6 {
+        width: 504px;
+      }
+
+      .span7 {
+        width: 588px;
+      }
+
+      .span8 {
+        width: 672px;
+      }
+
+      .span9 {
+        width: 756px;
+      }
+
+      .span10 {
+        width: 840px;
+      }
+
+      .span11 {
+        width: 924px;
+      }
+
+      .span12 {
+        width: 1008px;
+      }
+
+      .holz {
+        background-image: url("img/eicheweiss.jpg");
+        background-size: cover;
+      }
+
+      .matratze {
+        position: absolute;
+        top: 6px;
+        left: 84px;
+        width: 1008px;
+        height: 56px;
+      }
+
+      .matratze > div {
+        float: left;
+        height: 100%;
+        width: 20%;
+        background-color: #79797B;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid gray;
+      }
+
+      .grid {
+        position: absolute;
+        top: -57px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .grid > .container > div {
+        float: left;
+        width: 84px;
+        height: 100%;
+        border-right: 1px dashed rgba(135, 206, 250, 0.5);
+      }
+
+      .grid > .container > div:first-child {
+        border-left: 1px dashed rgba(135, 206, 250, 0.5);
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tudock</h1>
+      <div class="skala">
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+        <label>21cm</label>
+      </div>
+    </header>
+    <h2>The Partial</h2>
+    <div class="sofa">
+      <div class="span1"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span2"></div>
+      <div class="span3 holz"></div>
+      <div class="span1"></div>
+      <div class="span3 before-last"></div>
+      <div class="span1"></div>
+    </div>
+    <hr />
+    <h2>The Irregular</h2>
+    <div class="sofa">
+      <div class="span1"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span2"></div>
+      <div class="span3 holz"></div>
+      <div class="span1"></div>
+      <div class="span1"></div>
+      <div class="span2 before-last"></div>
+      <div class="span1"></div>
+    </div>
+    <hr />
+    <h2>Even Odd Oddest</h2>
+    <div class="sofa">
+      <div class="span1"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span2"></div>
+      <div class="span3 holz"></div>
+      <div class="span1"></div>
+      <div class="span3 holz before-last"></div>
+      <div class="span1"></div>
+    </div>
+    <hr />
+    <h2>Even Odd Oddest w/o the muscles</h2>
+    <div class="sofa">
+      <div class="span1 holz"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span2"></div>
+      <div class="span3 holz"></div>
+      <div class="span1"></div>
+      <div class="span3 holz before-last"></div>
+      <div class="span1 holz"></div>
+    </div>
+    <hr />
+    <h2>The Muscle Shirt</h2>
+    <div class="sofa">
+      <div class="span1"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz before-last"></div>
+      <div class="span1"></div>
+    </div>
+    <hr />
+    <h2>Vollfront</h2>
+    <div class="sofa">
+      <div class="span1 holz"></div>
+      <div class="matratze">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz"></div>
+      <div class="span3 holz before-last"></div>
+      <div class="span1 holz"></div>
+    </div>
+    <hr />
+    <div class="grid">
+      <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
